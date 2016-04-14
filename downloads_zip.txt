@@ -1,0 +1,5 @@
+http://dejanstojanovic.net/aspnet/2015/march/generate-zip-file-on-the-fly-in-aspnet-mvc-application/
+
+nuget package dotnetzip
+
+http://stackoverflow.com/questions/4125607/dotnetzip-add-files-without-creating-folders
