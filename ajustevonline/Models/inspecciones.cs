@@ -11,12 +11,16 @@ namespace ajustevonline.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class inspecciones
     {
+        [Required]
         public string idInspeccion { get; set; }
+        [Required]
         public string placa { get; set; }
         public Nullable<System.DateTime> fecha { get; set; }
+        [Required]
         public string uid { get; set; }
     }
 }
