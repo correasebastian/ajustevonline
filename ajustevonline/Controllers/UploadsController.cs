@@ -13,8 +13,7 @@ namespace ajustevonline.Controllers
      [RoutePrefix("api/uploads")]
     public class UploadsController : ApiController
     {
-         public class UploadController : ApiController
-         {
+        
              private OnlineEntities db = new OnlineEntities();
 
 
@@ -121,4 +120,4 @@ namespace ajustevonline.Controllers
              }
          }
     }
-}
+

@@ -79,6 +79,11 @@ namespace ajustevonline.Controllers
             {
                 return BadRequest(ModelState);
             }
+            if (inspecciones.fecha == null)
+            {
+                inspecciones.fecha = DateTime.Now;
+            }
+            
 
             db.inspecciones.Add(inspecciones);
 
