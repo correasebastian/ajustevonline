@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace ajustevonline.Models
 {
     public class SyncParams
     {
+        [Required]
         public string IdOnline { get; set; }
-       
+        [Required]
+        public int IdSiva { get; set; }
+
     }
 }

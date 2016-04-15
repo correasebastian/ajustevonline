@@ -55,7 +55,7 @@ namespace ajustevonline.Controllers
                     };
                     var img = new Images
                     {
-                        IdInspeccion = 2,
+                        IdInspeccion = syncParams.IdSiva,
                         Paths = paths
                     };
 
