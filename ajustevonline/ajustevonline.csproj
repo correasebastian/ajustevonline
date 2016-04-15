@@ -175,6 +175,7 @@
     <Compile Include="Controllers\fotosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\inspeccionesController.cs" />
+    <Compile Include="Controllers\SyncsController.cs" />
     <Compile Include="Controllers\UploadsController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -184,8 +185,29 @@
     <Compile Include="Models\fotos.cs">
       <DependentUpon>OnlineModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Images.cs">
+      <DependentUpon>MockUltModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\inspecciones.cs">
       <DependentUpon>OnlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\InspeccionesUlt.cs">
+      <DependentUpon>MockUltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MockUltModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MockUltModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MockUltModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MockUltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MockUltModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MockUltModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\OnlineModel.Context.cs">
       <AutoGen>True</AutoGen>
@@ -202,8 +224,19 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>OnlineModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Paths.cs">
+      <DependentUpon>MockUltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SyncParams.cs" />
     <Compile Include="Models\UploadResult.cs" />
+    <Compile Include="Models\Vehiculos.cs">
+      <DependentUpon>MockUltModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UltControllers\ImagesController.cs" />
+    <Compile Include="UltControllers\InspeccionesUltsController.cs" />
+    <Compile Include="UltControllers\PathsController.cs" />
+    <Compile Include="UltControllers\VehiculosController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
@@ -212,6 +245,16 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Models\MockUltModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MockUltModel.edmx</DependentUpon>
+      <LastGenOutput>MockUltModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\MockUltModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MockUltModel.edmx</DependentUpon>
+      <LastGenOutput>MockUltModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Models\OnlineModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>OnlineModel.edmx</DependentUpon>
@@ -249,6 +292,13 @@
     </EntityDeploy>
     <Content Include="Models\OnlineModel.edmx.diagram">
       <DependentUpon>OnlineModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\MockUltModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MockUltModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\MockUltModel.edmx.diagram">
+      <DependentUpon>MockUltModel.edmx</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\scm.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
